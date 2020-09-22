@@ -1,0 +1,517 @@
+/*-----HomePage-----*/
+
+
+/*Inhalt der Home-Seite*/
+
+#homeBereich {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50vh;
+    top: 45%;
+    width: 90%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*IntroText*/
+
+#homeText {
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 1.8vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px 0;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+/*Start and Join Button*/
+
+#homePageButtons {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#startButton, #joinButton {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+    text-height: max-size;
+    border: 10px solid #ffffff;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 15px 30px;
+    overflow: hidden;
+    width: 200px;
+    -webkit-transition: all 1.2s, border 0.5s 1.2s, box-shadow 0.3s 1.5s;
+    transition: all 1.3s, border 0.5s 0.6s, box-shadow 0.3s 1.5s;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+#startButton {
+    text-indent: 27px;
+}
+
+#joinButton {
+    text-indent: 32px;
+}
+
+#startButton span, #joinButton span {
+    display: inline-block;
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+    font-weight: normal;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, transform 0.4s 0.5s, -webkit-transform 0.4s 0.5s;
+}
+
+#startButton:hover, #startButton:focus {
+    text-indent: 0;
+    font-size: 120%;
+    background: #9fb55b;
+    color: #000000;
+    width: 320px;
+    border: 10px solid #dbd0a8;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+#startButton:hover span, #joinButton:hover span,
+#startButton:focus span, #joinButton:focus span {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#joinButton:hover, #joinButton:focus {
+    text-indent: 0;
+    font-size: 120%;
+    background: #030303;
+    color: rgba(185, 33, 33, 0.7);
+    width: 300px;
+    border: 10px solid #3a3a3a;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+
+/*Meister Yoda Bewegung onHover*/
+
+@keyframes yodaHoverBigScreen {
+    from {
+        margin-top: 0px;
+    }
+    to {
+        margin-top: 10px;
+    }
+}
+
+@keyframes yodaHoverSmallScreen {
+    from {
+        margin-top: 0px;
+    }
+    to {
+        margin-top: 10px;
+    }
+}
+
+/*Yoda und KyloRen Styles Allgemein */
+
+#yoda {
+    height: auto;
+    width: 21vw;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+}
+
+#kyloren {
+    height: auto;
+    width: 18vw;
+    float: right;
+    margin-top: -30px;
+    -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.80));
+    position: absolute;
+    top: 58%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/*-----ContactPage-----*/
+
+#robots {
+    margin-top: 50px;
+    float: right;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    float: right;
+    width: 350px;
+}
+
+#submitContact {
+    display: block;
+    margin: 0 auto;
+    font-size: 200%;
+    border: 10px solid #ffffff;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 15px 30px;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    height: 100px;
+    text-height: max-size;
+    -webkit-transition: all 1.2s, border 0.5s 1.2s, box-shadow 0.3s 1.5s;
+    transition: all 1.3s, border 0.5s 0.6s, box-shadow 0.3s 1.5s;
+    text-indent: -17px;
+}
+#submitContact span {
+    display: inline-block;
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+    font-weight: normal;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, transform 0.4s 0.5s, -webkit-transform 0.4s 0.5s;
+}
+
+#submitContact:hover, #submitContact:focus {
+    text-indent: 0;
+    font-size: 120%;
+    background: #2d7bbf;
+    color: rgba(246, 242, 239, 0.7);
+    width: 300px;
+    border: 10px solid #eddd7f;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+#submitContact:hover span, #submitContact:focus span {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+textarea {
+    resize: none;
+    overflow: auto;
+    max-height: 150px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgb(255, 255, 51);
+    border: 1px solid rgb(255, 255, 51);
+    outline: none !important;
+}
+
+#contactText {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 72vh; /*Vertikale Größe vom Impressum relativ zur Bildschirmgröße*/
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+#impressumText {
+    font-size: 3em;
+}
+
+.ueberschriftenImpressum {
+    color: #ffff33;
+}
+
+/*Scrollbar Hide bei Impressum im Firefox Browser*/
+@-moz-document url-prefix() {
+    #contactText {
+        margin-right: -17px;
+    }
+}
+
+/*Scrollbar Hide bei Impressum im Chrome/Safari Browser*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+#outerwrapperContactText {
+    overflow: hidden;
+}
+
+#firstSentenceImpressum {
+    font-size: 1.5em;
+}
+
+#contactForm {
+
+    vertical-align: middle;
+    text-align: center;
+    height: 70vh;
+}
+
+#robots {
+    position: absolute;
+    top: 40%;
+    left: 105%;
+    transform: translate(-20%, -50%);
+    height: auto;
+    width: 23vw;
+    margin-left: 12vw;
+    margin-top: 40px;
+}
+
+
+#innerContactForm {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1em;
+    color: white;
+}
+.form-group {
+    width: 25em;
+}
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+   #homeText {
+       font-size: 185%;
+       margin-top: 7%;
+   }
+
+    #yoda {
+        height: auto;
+        width: 35vw;
+        margin-top: 10px;
+        float: left;
+        position: absolute;
+        top: 70%;
+        left: 17%;
+        transform: translate(-50%, -50%);
+    }
+
+    #kyloren {
+        height: auto;
+        width: 35vw;
+        float: right;
+        margin-top: 10px;
+        -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.80));
+        position: absolute;
+        top: 68%;
+        left: 81%;
+        transform: translate(-50%, -50%);
+    }
+    #homePageButtons {
+        top:20%;
+    }
+
+}
+
+
+
+
+
+/*Mobile Version of Home, Contact, Legal notice*/
+
+/*if screen < 600px*/
+
+@media screen and (max-width: 600px) {
+
+    #homeText {
+        font-size: 1em;
+        margin-top: -3vh;
+    }
+
+    #homeBereich {
+        margin-top: -2%;
+        top: 40%;
+    }
+
+
+
+    #homePageButtons {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 15vh;
+    }
+
+    #startButton {
+        font-size: 130%;
+    }
+
+    #joinButton {
+        text-indent: 29px;
+        font-size: 130%;
+        z-index: -100;
+    }
+
+    #startButton:hover, #startButton:focus {
+        width: 220px;
+        border: 5px solid #dbd0a8;
+        font-size: 100%;
+        z-index: -2;
+    }
+
+    #joinButton:hover, #joinButton:focus {
+        width: 160px;
+        border: 5px solid #3a3a3a;
+        font-size: 100%;
+    }
+
+    #startButton, #joinButton {
+        height: 60px;
+        border: 5px solid #ffffff;
+        padding: 5px 6px;
+        width: 120px;
+    }
+
+    #robotDiv {
+        display: none;
+    }
+
+    .form-group {
+        display: inline-block;
+        width: 75%;
+        width: 20em !important;
+    }
+
+    #impressumText {
+        font-size: 2.6em;
+    }
+
+    #submitContact {
+        font-size: 130%;
+        border: 5px solid #ffffff;
+        height: 60px;
+        width: 270px;
+        text-indent: 0px;
+    }
+
+    #submitContact:hover, #submitContact:focus {
+        text-indent: 0px;
+        width: 270px;
+        border: 5px solid #eddd7f;
+    }
+
+    #contactForm {
+        height: 100%;
+        display: table-cell;
+    }
+
+    #innerContactForm {
+        top: 55% !important;
+        left: 50% !important;
+    }
+
+    #kyloren {
+        width: 37vw;
+        top: 46vh;
+        left: 79%;
+
+    }
+    #yoda {
+        width: 38vw;
+        top: 42vh;
+        left: 19%;
+    }
+
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+    #homeText {
+        display:none;
+    }
+
+    #kyloren {
+        width: 28vw;
+        top: 29vh;
+        left: 88%;
+    }
+    #yoda {
+        width: 28vw;
+        top: 20vh;
+        left: 13%;
+    }
+
+    #homePageButtons {
+        top: 20vh;
+    }
+
+    textarea {
+        max-height: 60px;
+    }
+    #submitContact {
+        height:30px;
+        width: 160px;
+        position: absolute;
+        top:49%;
+        float:left;
+        left: -37%;
+        margin-top: 4px;
+        text-indent: -3px;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        padding: 11px 30px;
+        text-align: center;
+        line-height: 0;
+    }
+    #submitContact:hover, #submitContact:focus {
+        width: 160px;
+        line-height: 0;
+    }
+
+    #innerContactForm {
+        top: 54% !important;
+    }
+
+    .form-group {
+        height: 4vh;
+        margin-top:15px;
+    }
+    .form-control {
+        height: 25px;
+    }
+    label {
+        display:inline;
+    }
+    #contactText {
+        max-height: 54vh;
+    }
+    #outerwrapperContactText {
+        margin-top: -10px;
+    }
+
+
+
+}
+
+

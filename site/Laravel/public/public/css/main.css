@@ -1,0 +1,150 @@
+/*Standard CSS Zeug*/
+
+body, html {
+    overflow-y: hidden;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 2.5em;
+}
+
+a {
+    color: white;
+    text-decoration: none !important;
+}
+a:focus {
+    outline: none;
+}
+
+button {
+    outline : 0;
+    -moz-outline : 0;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*Hintergrund Sternenhimmel*/
+#starBackground {
+    background: url('/public/img/background.png') repeat 5% 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+}
+
+#midground {
+    background: url('/public/img/midground.png') repeat 20% 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -99;
+}
+
+a:hover, a:focus {
+    color: #9fb55b;
+}
+
+/*MainLogo + Schere/Stein/Papier Bilder bei Game Auswahl + Radio Button*/
+
+#logo {
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    width: 800px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/*Styles für weitere Pages*/
+input {
+    padding: 12px 20px;
+    border-radius: 20px;
+    width: 60%;
+    color: black;
+    text-align: center;
+
+}
+
+
+
+/*Buttons auf Game Seiten Effekte  */
+
+button {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*Startseite: if screen < 600px: small Logo sichtbar*/
+
+@media screen and (max-width: 600px) {
+    #logo {
+        display: none;
+    }
+
+    #logoKlein {
+        width: 175px;
+        height: auto;
+        margin: auto;
+        padding-top: 20px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    body, html {
+        overflow-y: scroll;
+    }
+
+}
+
+
+
+/*Startseite: Großes Logo zu sehen*/
+
+@media screen and (min-width: 601px) {
+    #logoKlein {
+        display: none;
+    }
+}
+
+/*Wenn Bildschirm kleiner als 359px Breite hat*/
+/*--> Footer anpassen*/
+
+@media screen and (max-width: 358px) {
+    footer {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+
+    footer {
+        display: none;}
+}
+
+
+
+
+input:focus, input[type]:focus, .uneditable-input:focus {
+    border-color: rgba(255, 255, 51, 0.8);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.1) inset, 0 0 8px rgba(255, 255, 51, 0.8);
+    outline: none !important;
+}
+
+
+/*.*/

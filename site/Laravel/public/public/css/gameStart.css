@@ -1,0 +1,967 @@
+/*First Page after Homepage-"Start"-Button*/
+
+#inhalt {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50vh;
+    top: 30%;
+    width: 90%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -8%;
+    margin-top: 10px;
+    display:none;
+}
+
+.points {
+    font-size: 1.5em;
+}
+
+.lightWhite {
+    color: #ffffff;
+}
+
+#hands {
+    margin-top: -15px;
+}
+
+.table {
+    text-align: center;
+    font-size: 1.0vw;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    border-spacing: 50px;
+    vertical-align:middle;
+    margin: 0 auto;
+    width: 150vh;
+    table-layout: auto;
+}
+
+
+.lightSpalte  {
+    width: 33.3%;
+    color: #ffff33;
+}
+
+
+#whatsYourName {
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.6vw;
+    margin-top: 10px;
+    margin: 0 auto;
+    padding: 2px 0;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+
+#whiteText {
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.6vw;
+    margin-top: 10px;
+    margin: 0 auto;
+    padding: 2px 0;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#choiceText, #choiceResult {
+    text-align: center;
+    line-height: 1em;
+    font-size: 1.4vw;
+    margin: auto;
+    margin-top: 10px;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.choiceResult {
+    display: inline;
+}
+
+#playerAuswahl1 {
+    margin-right: 80px ;
+}
+
+#Spieler_1_C > img, #Spieler_2_C > img{
+    width: 7vw !important;
+}
+
+
+
+#newGame {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+    text-height: max-size;
+    border: 10px solid #ffffff;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 15px 30px;
+    overflow: hidden;
+    width: 350px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 200%;
+    text-indent: 0px;
+
+}
+#newGame:hover, #newGame:focus {
+    width: 350px;
+    border: 10px solid #ffff33;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+#Schere,#Stein,#Papier {
+    position: relative;
+    display: inline-block;
+    width: 18vw;
+    height: auto;
+}
+
+#Schere:hover,#Stein:hover,#Papier:hover {
+    -webkit-filter: drop-shadow(3px 3px 5px #ffff33)
+    drop-shadow(-3px -3px 5px #ffff33);
+    filter: drop-shadow(3px 3px 5px #ffff33)
+    drop-shadow(-3px -3px 5px #ffff33);
+}
+label > input {
+    /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+
+label > input + img {
+    /* IMAGE STYLES */
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+
+#submitName {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+    text-height: max-size;
+    border: 10px solid #ffffff;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 15px 30px;
+    overflow: hidden;
+    width: 200px;
+    -webkit-transition: all 1.2s, border 0.5s 1.2s, box-shadow 0.3s 1.5s;
+    transition: all 1.3s, border 0.5s 0.6s, box-shadow 0.3s 1.5s;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+#submitName {
+    text-indent: -6px;
+}
+#submit {
+    text-indent: 20px;
+}
+
+
+
+
+
+
+#submitName span {
+    display: inline-block;
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+    font-weight: normal;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, transform 0.4s 0.5s, -webkit-transform 0.4s 0.5s;
+}
+
+#submitName:hover, #submitName:focus {
+    text-indent: 0;
+    font-size: 120%;
+    background: #e4c15a;
+    color: #000000;
+    width: 320px;
+    border: 10px solid #e1eae7;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+#submitName:hover span,#submitName:focus span {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Luke Skywalker Picture*/
+
+#skywalker {
+    height: auto;
+    width: 18vw;
+    float: right;
+    position: absolute;
+    top: 65%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+}
+
+#skywalker:hover, #skywalker:focus {
+    opacity:0;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+}
+
+
+#leia {
+    height: auto;
+    width: 14vw;
+    float: right;
+    position: absolute;
+    top: 46%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+
+#leia:hover, #leia:focus {
+    opacity:0;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+}
+
+#hanniUndNanni {
+    height: auto;
+    width: 18vw;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hanniUndNanni:hover, #hanniUndNanni:focus {
+    opacity:0;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+}
+
+
+#lukeDraw {
+    height: auto;
+    width: 13vw;
+    float: right;
+    position: absolute;
+    top: 42%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+
+#lukeDraw:hover, #lukeDraw:focus {
+    opacity:0;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+}
+
+#vaderDraw {
+    height: auto;
+    width: 18vw;
+    float: right;
+    margin-top: -30px;
+    position: absolute;
+    top: 47%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+}
+
+#vaderDraw:hover, #vaderDraw:focus {
+    opacity:0;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+}
+
+#stormtrooper {
+    height: auto;
+    width: 19vw;
+    float: right;
+    margin-top: -30px;
+    position: absolute;
+    top: 51%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+#stormtrooper:hover, #stormtrooper:focus {
+    opacity:0;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+}
+
+
+
+
+/*Startseite: if screen < 600px: small Logo sichtbar*/
+
+@media screen and (max-width: 600px) {
+
+    #nameQuestionContent {
+        padding-top:15px;
+    }
+
+    #submit, #submitName {
+        padding: 4px;
+        width: 125px;
+    }
+
+    #submit, #submitName {
+        text-indent: 12px;
+        width: 200px;
+    }
+
+}
+
+
+#sharelinkInput {
+    text-align: center !important;
+    height:50px !important;
+    width: 50vw;
+    font-size: 1.1em;
+}
+
+#choiceModal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60vh;
+    top: 10vh;
+    width: 90%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#winnerModal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60vh;
+    width: 90%;
+    margin-top: 15vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#waitingPageContent {
+    margin-top: 15vh;
+}
+
+#deathstar {
+    margin-top: 1em;
+    width: 18vw;
+    height: auto;
+    -moz-animation: spinHorizontal 18s infinite linear;
+    -o-animation: spinHorizontal 18s infinite linear;
+    -webkit-animation: spinHorizontal 18s infinite linear;
+    animation: spinHorizontal 18s infinite linear;
+}
+
+
+@keyframes spinHorizontal {
+    50% {   transform: rotateY(360deg);  }
+}
+
+
+
+
+
+
+#info {
+    display:none;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1vw;
+    margin-top: 10px;
+    margin: 0 auto;
+    padding: 2px 0;
+    color: #ff0000;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#copied {
+    display:none;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1vw;
+    margin-top: 10px;
+    margin: 0 auto;
+    padding: 2px 0;
+    color: #ffff33;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#win {
+    width: 30vw;
+    height:auto;
+
+}
+#lose {
+    width: 35vw;
+    height:auto;
+
+}
+#draw {
+    width: 22vw;
+    height: auto;
+}
+
+
+/* Form submit button */
+.form-wrapper button {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+    width: 90px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #000000;
+    border-radius: 40px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+
+    -webkit-transition: all 0.3s, border 0.3s 0.3s, box-shadow 0.3s 0.3s;
+    transition: all 0.3s, border 0.3s 0.3s, box-shadow 0.3s 0.3s;
+}
+
+
+
+
+.form-wrapper button:hover {
+    background: #ffff33;
+}
+
+
+
+.form-wrapper button:focus {
+    outline: none !important;
+}
+
+
+
+
+
+/*Mobile Version of Home, Contact, Legal notice*/
+
+/*if screen < 600px*/
+
+@media screen and (max-width: 600px) {
+
+    #inhalt {
+        top: 18%;
+    }
+
+    #whatsYourName, #whiteText, #choiceText {
+        font-size: 0.9em;
+    }
+
+    #choiceResult, .choiceResult {
+        margin-top: 15px;
+        font-size: 1em !important;
+    }
+
+    #sharelinkInput {
+        width: 67vw  !important;
+    }
+
+    .form-wrapper button {
+        font-size: 1em;
+    }
+    #skywalker {
+        margin-top: 10vh;
+        height: auto;
+        width: 26vw;
+        top: 90%;
+        left: 50%;
+    }
+
+
+
+
+    #winnerModal {
+        margin-top: 20vh;
+    }
+
+    #leia {
+        margin-top: 10px;
+        height: auto;
+        width: 22vw;
+        top: 63%;
+        left: 8%;
+    }
+
+    #hanniUndNanni {
+        margin-top: 11vh;
+        height: auto;
+        width: 38vw;
+        top: 90%;
+        left: 50%;
+    }
+
+    #lukeDraw {
+        height: auto;
+        width: 18vw;
+        top: 69%;
+        left: 8%;
+    }
+
+    #vaderDraw {
+        height: auto;
+        width: 24vw;
+        top: 78%;
+        left: 88%;
+    }
+
+    #stormtrooper {
+        height: auto;
+        width: 30vw;
+        top: 76%;
+        left: 92%;
+        z-index: 1;
+    }
+
+    #submitName {
+        height: 60px;
+        border: 5px solid #ffffff;
+        padding: 5px 6px;
+        width: 120px;
+        text-indent: 5px;
+        font-size: 130%;
+        margin-top: -5px;
+    }
+
+
+    #submitName:hover, #submitName:focus {
+        width: 170px;
+        border: 5px solid #e1eae7;
+        font-size: 100%;
+    }
+
+    #choiceModal {
+        height: 65vh;
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    #hands {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+
+    #Stein, #Schere, #Papier {
+        width: 18vh;
+        margin-top: -15px;
+    }
+
+    #lose, #win {
+        width: 55vw;
+
+    }
+    #draw {
+        width: 45vw;
+        margin-left: 0%;
+    }
+
+    #newGame {
+        text-indent: 0px;
+        font-size: 130%;
+        height: 60px;
+        border: 5px solid #ffffff;
+        padding: 5px 6px;
+        width: 120px;
+        margin-top: 7vh;
+    }
+
+
+    #newGame:focus, #newGame:hover {
+        font-size: 130%;
+        width: 120px;
+        border: 5px solid #ffff33;
+    }
+
+    #startButton:hover, #startButton:focus {
+        width: 220px;
+        border: 5px solid #dbd0a8;
+        font-size: 100%;
+        z-index: -2;
+    }
+    #waitingPageContent {
+        margin-top: 25vh;
+    }
+
+    #deathstar {
+        margin-top:25px;
+        width: 45vw;
+        height: auto;
+    }
+
+    #info, #copied {
+        font-size: 0.9em;
+        margin-bottom: -5px;
+    }
+
+    #score {
+        top: 0.5vh;
+        margin-top: 10px;
+        display:none;
+    }
+
+    .points {
+        font-size: 3.5vw;
+    }
+
+    .table {
+        font-size: 3.0vw;
+        width: 50vh;
+    }
+
+    .choiceResult {
+        display: block;
+    }
+
+    #playerAuswahl1 {
+        margin-right: 0px;
+    }
+    #playerAuswahl2 {
+        margin-top: -5px;
+    }
+
+    #Spieler_1_C > img, #Spieler_2_C > img{
+        width: 12vw !important;
+    }
+
+
+    .form-wrapper button {
+        margin-top:-5px;
+        height: 42px;
+        width: 80px;
+        margin-bottom: 5px;
+        background: transparent;
+    }
+
+    .glyphicon {
+        font-size: 0.9em;
+        margin-top:-20px;
+    }
+
+    .form-wrapper button:hover {
+        background: transparent;
+    }
+
+    .form-wrapper button:active,
+    .form-wrapper button:focus {
+        background: transparent;
+    }
+
+    #spinnerwait {
+        margin-top: 5px;
+    }
+}
+
+
+
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+    #score {
+        top: -1.5vh;
+        margin-top: -5px;
+        display:none;
+    }
+
+    .points {
+        font-size: 3vw;
+    }
+
+    .table {
+        font-size: 2vw;
+        width: 70vh;
+    }
+}
+
+
+
+@media screen and (max-height: 450px) {
+    #lukeDraw, #vaderDraw, #skywalker, #stormtrooper, #leia {
+        display:none !important;
+    }
+    #info {
+        font-size: 0.9em;
+        padding: 0 0;
+    }
+
+    #Spieler_1_C > img, #Spieler_2_C > img{
+        width: 10vw !important;
+    }
+
+    #score {
+        margin-top:-10%;
+    }
+
+    #winnerModal {
+        margin-top: 20vh;
+    }
+
+    #spinnerwait {
+        margin-top: 15px;
+    }
+
+    #copied {
+        font-size: 0.9em;
+        padding: 0 0;
+    }
+
+    .addthis_inline_share_toolbox {
+        margin-top:-15px;
+    }
+
+    #hands {
+        width: 80%;
+    }
+
+    #inhalt {
+        top: 45%;
+    }
+
+    #choiceText {
+        font-size: 0.9em;
+        margin-top: 25px;
+    }
+
+    .table {
+        font-size: 2.5vw;
+        width: 80vh;
+    }
+
+    #waitingPageContent {
+        margin-top:15%;
+    }
+
+    #whiteText {
+        font-size: 1em;
+    }
+
+    #deathstar {
+        width: 15vw;
+        margin-top: 5px;
+    }
+
+
+
+    #draw {
+        width: 30vw;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -18%;
+        top: -14%;
+        float:left;
+    }
+
+    #lose {
+        width: 40vw;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -25%;
+        top: -30%;
+        float:left;
+    }
+    .loser {
+        width: 30vw !important;
+        margin-left: 25px;
+        margin-top: 60px;
+    }
+
+    #win {
+        width: 38vw;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        position: absolute;
+        left: -20%;
+        top: -20%;
+        float:left;
+    }
+
+    #choiceResult {
+        font-size: 0.9em !important;
+        margin-top: 15px;
+    }
+    .choiceResult {
+        display: block;
+        margin-top: 0px;
+    }
+
+    #playerAuswahl2 {
+        margin-top: -25px;
+    }
+    #newGame {
+        font-size: 100%;
+        height: 40px;
+        margin-top: 0;
+        border: 3px solid #ffffff;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        position: absolute;
+        right: -17%;
+        top: -25%;
+        float:right;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+    }
+
+    #newGame:focus, #newGame:hover {
+        font-size: 100%;
+        border: 5px solid #ffff33;
+    }
+
+    #nameQuestionContent {
+        padding-top:0px;
+    }
+
+    #joinModal {
+        margin-top: -8%;
+    }
+    #hanniUndNanni {
+        display:none;
+    }
+    .form-wrapper button {
+        margin-bottom: 20px;
+    }
+
+    #submitName {
+        font-size: 100%;
+        height: 40px;
+        margin-top: 0;
+        border: 3px solid #ffffff;
+        text-indent: 15px;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        position: absolute;
+        right: -20px;
+        top: 0%;
+        float:right;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+    }
+
+    #submitName:focus, #submitName:hover {
+        font-size: 100%;
+        border: 5px solid #ffff33;
+        right:-40px;
+        top: -15px;
+        width: 160px;
+
+    }
+
+    #submitName span {
+        display: inline-block;
+        -webkit-transform: translateX(300px);
+        transform: translateX(300px);
+        font-weight: normal;
+        opacity: 0;
+        -webkit-transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+        transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+        transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
+        transition: opacity 0.1s 0.5s, transform 0.4s 0.5s, -webkit-transform 0.4s 0.5s;
+    }
+
+
+    #submitName:hover span,#submitName:focus span {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #newGame {
+        font-size: 100%;
+        width: 110px;
+        padding: 0px 16px;
+        height: 40px;
+        margin-top: 0;
+        border: 3px solid #ffffff;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        float:right;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+    }
+
+    #newGame:focus, #newGame:hover {
+        font-size: 100%;
+        border: 5px solid #ffff33;
+    }
+}

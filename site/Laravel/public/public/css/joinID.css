@@ -1,0 +1,165 @@
+/*Inhaltscontainer für Alles*/
+
+#inhalt {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50vh;
+    top: 35%;
+    width: 90%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/*Enter your friend's Game ID Text*/
+
+#enterYourIdText {
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.6vw;
+    margin-top: 10px;
+    margin: 0 auto;
+    padding: 2px 0;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+
+
+
+
+/*Go Button*/
+
+#gamelink {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+    text-height: max-size;
+    border: 10px solid #ffffff;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 40px;
+    padding: 15px 30px;
+    overflow: hidden;
+    width: 200px;
+    -webkit-transition: all 1.2s, border 0.5s 1.2s, box-shadow 0.3s 1.5s;
+    transition: all 1.3s, border 0.5s 0.6s, box-shadow 0.3s 1.5s;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 200%;
+    text-indent: 41px;
+}
+
+#gamelink span {
+    display: inline-block;
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+    font-weight: normal;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, -webkit-transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
+    transition: opacity 0.1s 0.5s, transform 0.4s 0.5s, -webkit-transform 0.4s 0.5s;
+}
+
+#gamelink:hover, #gamelink:focus, #gamelink.hovered {
+    text-indent: 0;
+    font-size: 120%;
+    background: #030303;
+    color: rgba(185, 33, 33, 0.7);
+    width: 300px;
+    border: 10px solid #3a3a3a;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+
+}
+
+#gamelink:hover span, #gamelink:focus span, #gamelink.hovered span {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/*Darth Vader Picture*/
+
+#vader {
+    height: auto;
+    width: 22vw;
+    float: right;
+    margin-top: -30px;
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+#vader:hover, #vader:focus {
+    opacity:0;
+    -webkit-transition: all 3s ease;
+    transition: all 3s ease;
+}
+
+
+input {
+    width: 35%;
+}
+
+
+
+/*Mobile Version of Home, Contact, Legal notice*/
+
+/*if screen < 600px*/
+
+@media screen and (max-width: 600px) {
+
+    #inhalt {
+        top: 23%;
+    }
+
+    #enterYourIdText {
+        font-size: 1.1em;
+    }
+
+    .form-group {
+        width: 100%;
+        display: inline-block;
+    }
+
+    #vader {
+        margin-top: 15px;
+        height: auto;
+        width: 35vw;
+        top: 92%;
+        left: 51%;
+    }
+
+    #gamelink {
+        height: 60px;
+        border: 5px solid #ffffff;
+        padding: 5px 6px;
+        width: 120px;
+        text-indent: 35px;
+        font-size: 130%;
+        margin-top: -5px;
+    }
+
+
+    #gamelink:hover, #gamelink:focus {
+        width: 170px;
+        border: 5px solid #3a3a3a;
+        font-size: 100%;
+    }
+
+}
+
+
+@media screen and (max-height: 450px) {
+    #vader {
+        display:none;
+    }
+    #inhalt {
+        top: 32%;
+    }
+}
